@@ -1,0 +1,6 @@
+name: Mtex
+version: ${project.version}
+main: yoneyone.yone.yo.mtex.Mtex
+commands:
+  mtex:
+    description: mtex main command.
