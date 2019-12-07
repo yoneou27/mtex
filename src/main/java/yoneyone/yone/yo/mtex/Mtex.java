@@ -29,6 +29,10 @@ public final class Mtex extends JavaPlugin implements Listener {
 
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
+        if (!sender.hasPermission("yone.mtex.op")){
+            sender.sendMessage("§4You do not have permission");
+            return true;
+        }
         if ("mtex".equals(label)) {
             if (sender instanceof Player) {
                 Player player = (Player) sender;
